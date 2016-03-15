@@ -128,17 +128,27 @@
 			"icon": "3ware.png",
 			"website": "www.3ware.com"
 		},
+		"a-blog cms": {
+			"cats": [
+				1
+			],
+			"icon": "a-blog cms.png",
+			"implies": "PHP",
+			"meta": {
+				"generator": "a-blog cms"
+			},
+			"website": "www.a-blogcms.jp"
+		},
                "anchorCache": {
                              "cats": [
                                 23
                         ],
-                        "headers": {
-                                 "X-Powered-By": "anchorCache",
-				 "X-anchor-Cache": ""
-                        },
+                        "meta": {
+	                        "generator": "anchorCache"
+	                },
                         "icon": "anchorCache.png",
                         "implies": "PHP",
-                        "website": "anchorcache.eu"
+                        "website": "www.anchorcache.eu"
                 },
 		"AMPcms": {
 			"cats": [
@@ -1537,7 +1547,7 @@
 				36
 			],
 			"env": "^criteo",
-			"icon": "Criteo.png",
+			"icon": "Criteo.svg",
 			"script": "[^/]*//(?:cas\\.criteo\\.com|(?:[^/]\\.)?criteo\\.net)/",
 			"website": "criteo.com"
 		},
@@ -6507,6 +6517,18 @@
 			"icon": "Stackla Social Hub.png",
 			"website": "stackla.com/"
 		},
+		"Stamplay": {
+			"cats": [
+				34,
+				47
+			],
+			"headers": {
+				"Server": "Stamplay"
+			},
+			"icon": "Stamplay.png",
+			"script": "stamplay.*\\.js",
+			"website": "stamplay.com"
+		},
 		"Starlet": {
 			"cats": [
 				22
@@ -8675,6 +8697,16 @@
 			"script": "(?:scriptaculous|protoaculous)\\.js",
 			"website": "script.aculo.us"
 		},
+		"Segment": {
+			"cats": [
+				10
+			],
+			"env": "^analytics$",
+			"icon": "Segment.png",
+			"script": "cdn\\.segment\\.com/analytics\\.js",
+			"html": "<script[\\s\\S]*cdn\\.segment\\.com/analytics.js[\\s\\S]*script>",
+			"website": "segment.com"
+		},
 		"shine.js": {
 			"cats": [
 				25
@@ -8871,6 +8903,30 @@
 				"yepnope.*\\.js"
 			],
 			"website": "yepnopejs.com"
+		},
+		"List.js": {
+			"cats": [
+				12
+			],
+			"env": "^List$",
+			"icon": "List.js.png",
+			"script": "^list\\.(?:min\\.)?js$",
+			"website": "www.listjs.com"
+		},
+		"Shopery": {
+			"cats": [
+				6
+			],
+			"headers": {
+				"X-Shopery": ""
+			},
+			"icon": "Shopery.svg",
+			"implies": [
+				"PHP",
+				"Symfony",
+				"Elcodi"
+			],
+			"website": "shopery.com"
 		}
 	},
 	"categories": {
